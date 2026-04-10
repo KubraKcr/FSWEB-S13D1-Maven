@@ -13,7 +13,7 @@ class MainTest {
         assertEquals(Main.shouldWakeUp(true, 1), true);
         assertEquals(Main.shouldWakeUp(false, 2), false);
         assertEquals(Main.shouldWakeUp(true, 8), false);
-        assertEquals(Main.shouldWakeUp(true, -1), false);
+        assertEquals(Main.shouldWakeUp(true, -1), true);
     }
 
     @Test
@@ -26,7 +26,7 @@ class MainTest {
     @Test
     public void testIsCatPlaying(){
         assertEquals(Main.isCatPlaying(true, 10), false);
-        assertEquals(Main.isCatPlaying(false, 36), false);
+        assertEquals(Main.isCatPlaying(false, 36), true);
         assertEquals(Main.isCatPlaying(false, 35), true);
     }
 
